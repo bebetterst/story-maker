@@ -1,0 +1,76 @@
+.videoResultWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+    overflow: visible;
+}
+
+.videoContainer {
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 400px;
+    box-sizing: border-box;
+}
+
+.videoEl {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.videoPlaceholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    width: 100%;
+    color: #888;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.videoPlaceholder svg {
+    margin-bottom: 16px;
+    color: #646cff;
+    opacity: 0.7;
+}
+
+.videoPlaceholder p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.videoHint {
+    font-size: 14px !important;
+    color: #666;
+    margin-top: 8px !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 1024px) {
+    .videoContainer {
+        margin-top: 20px;
+        min-height: 300px;
+    }
+    
+    .videoPlaceholder {
+        height: 280px;
+    }
+}

@@ -1,0 +1,37 @@
+.confirmationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.instructions {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.segmentContainer {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}
+
+.textSection,
+.promptSection {
+  margin-bottom: 8px;
+}
+
+.textArea {
+  margin-top: 4px;
+  width: 100%;
+  white-space: pre-wrap;       /* 允许文本换行 */
+  word-wrap: break-word;       /* 在单词内部换行 */
+  overflow-y: auto;            /* 垂直方向自动显示滚动条 */
+  resize: vertical;            /* 允许垂直方向调整大小 */
+  line-height: 1.5;            /* 行高 */
+}

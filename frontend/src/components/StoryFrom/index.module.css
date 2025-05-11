@@ -1,0 +1,148 @@
+.formDiv {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 1280px;
+    min-width: 650px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* 表单分区样式 */
+.formSection {
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.formSection:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* 移除标题样式 */
+.sectionTitle {
+    display: none;
+}
+
+/* 表单行布局 */
+.formRow {
+    display: flex;
+    gap: 12px;
+}
+
+.formRow > :global(.ant-form-item) {
+    flex: 1;
+}
+
+/* 提交按钮容器 */
+.submitButtonContainer {
+    margin-top: 16px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 1;
+}
+
+.buttonGroup button {
+    min-width: 120px;
+    height: 44px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* 表单标题样式 */
+.formDiv :global(.ant-form-item-label) {
+    text-align: left;
+    font-weight: 500;
+    color: #333333;
+}
+
+/* 表单输入框样式 */
+.formDiv :global(.ant-input),
+.formDiv :global(.ant-select-selector) {
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    color: #333333;
+    transition: all 0.3s ease;
+}
+
+.formDiv :global(.ant-input:hover),
+.formDiv :global(.ant-select-selector:hover) {
+    border-color: #646cff;
+}
+
+.formDiv :global(.ant-input:focus),
+.formDiv :global(.ant-select-selector:focus) {
+    border-color: #646cff;
+    box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+/* TextArea 特定样式 */
+.formDiv :global(.ant-input-textarea .ant-input) {
+    white-space: pre-wrap;       /* 允许文本换行 */
+    word-wrap: break-word;       /* 在单词内部换行 */
+    overflow-y: auto;            /* 垂直方向自动显示滚动条 */
+    resize: vertical;            /* 允许垂直方向调整大小 */
+    min-height: 80px;            /* 最小高度 */
+    line-height: 1.5;            /* 行高 */
+}
+
+/* 提交按钮样式 */
+.formDiv :global(.ant-btn-primary) {
+    background-color: #646cff;
+    border-color: #646cff;
+    border-radius: 8px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 0;
+    transition: all 0.3s ease;
+}
+
+.formDiv :global(.ant-btn-primary:hover) {
+    background-color: #535bf2;
+    border-color: #535bf2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(83, 91, 242, 0.3);
+}
+
+/* 表单项间距 */
+.formDiv :global(.ant-form-item) {
+    margin-bottom: 12px;
+}
+
+.formDiv :global(.ant-btn) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+/* 必填标记样式 */
+.formDiv :global(.ant-form-item-required::before) {
+    color: #ff7875 !important;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .formRow {
+        flex-direction: column;
+        gap: 0;
+    }
+}

@@ -1,0 +1,144 @@
+#root {
+  max-width: 1280px;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* 基础动画效果 */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* 卡片和文档样式 */
+.card {
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.read-the-docs {
+  color: #666;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* 主应用布局 */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(to bottom, #f0f0f0, #e6e6e6);
+  padding-bottom: 2rem;
+}
+
+.appMainArea {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+/* 确保下拉菜单不会导致页面宽度变化 */
+.ant-select-dropdown {
+  max-width: 300px;
+}
+
+.ant-select-item-option-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 响应式布局 */
+@media (max-width: 1024px) {
+  .appMainArea {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 左侧表单区域 - 占据58%宽度 */
+.appMainArea > :first-child {
+  flex: 0 0 54%;
+  max-width: 75%;
+  min-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-right: 0.5rem;
+}
+
+/* 右侧视频预览区 - 占据38%宽度 */
+.appMainArea > :last-child {
+  flex: 0 0 44%;
+  max-width: 75%;
+  min-width: 0;
+  overflow: visible;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b0b0b0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #646cff;
+}

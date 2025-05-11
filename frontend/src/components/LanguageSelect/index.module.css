@@ -1,0 +1,43 @@
+.languageCon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 1280px;
+    box-sizing: border-box;
+}
+
+.changeText {
+    margin-right: 10px;
+    font-weight: 500;
+    color: #333333;
+}
+
+/* 语言选择器样式 */
+.languageCon :global(.ant-select) {
+    min-width: 100px;
+}
+
+.languageCon :global(.ant-select-selector) {
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff !important;
+    color: #333333;
+}
+
+.languageCon :global(.ant-select-arrow) {
+    color: #646cff;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .languageCon {
+        padding: 8px 16px;
+    }
+}
