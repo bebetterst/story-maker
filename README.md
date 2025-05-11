@@ -3,7 +3,8 @@
 
 ## 项目说明
 
-本项目是基于alecm20/story-flicks项目开发而来，可以支持用户用一句生成视频，或者基于已有的故事和图片合成视频
+本项目是基于alecm20/story-flicks项目开发而来，因为本人代码能力有限，主要依靠AI编程Trae进行开发，所以单独开了本项目。
+可以支持用户用一句生成视频，或者基于已有的故事和图片合成视频
 视频中包含图片、故事讲解，以及音频和字幕信息。
 目前主要有两个模块
 - 1.AI故事生成，支持用户输入故事主题和图片设定后自动调用后台服务生成视频，在视频正式生成之前可以手动调整大模型生成好的故事文本和图片提示词
@@ -13,7 +14,9 @@
 
 ## 界面截图
 
-![](backend/examples/screenshot/usage.jpg)
+![](backend/examples/screenshot/usage1.png)
+![](backend/examples/screenshot/usage2.png)
+![](backend/examples/screenshot/settings.png)
 
 
 ## 使用说明
